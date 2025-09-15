@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OS Command Injection Lab</title>
+</head>
+<body>
+    <h2>Basit Ping Aracı</h2>
+    <p>Bir IP adresi girin ve sunucunun o adrese ping atmasını sağlayın.</p>
+
+    <form action="/" method="post">
+        <label for="ip_address">IP Adresi:</label>
+        <input type="text" id="ip_address" name="ip_address" value="127.0.0.1">
+        <button type="submit">Ping At</button>
+    </form>
+
+    <hr>
+
+    <h3>Komut Çıktısı:</h3>
+    <pre>{{ output }}</pre>
+
+</body>
+</html>
